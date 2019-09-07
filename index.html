@@ -1,0 +1,161 @@
+<!DOCTYPE html5>
+<meta charset="UTF-8">
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- This part was added here for the scrolling -->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<!-- <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script> -->
+	<script type="text/javascript" src="main.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+	<title>Hasanat's Portfolio</title>
+</head>
+
+<body>
+	<!--the side navbar section-->
+	<div class="side-nav">
+		<ul>
+			<a  href="#Home"><li id="home-btn">Home</li></a>
+			<a href="#Inventory"><li id="inventory-btn">Inventory</li></a>
+			<a href="#ML-Progress"><li id="ml-btn">ML Progress</li></a>
+			<a href="#Contact"><li id="contact-btn">Contact</li></a>
+		</ul>
+	</div>
+
+	<!--Page content-->
+
+	<span id="Home"></span>
+	<!--about me section-->
+	<div class="about-me">
+		<div class="about-me-text">
+			<h1>Hello There,<br> I am Hasanat</h1>
+			<h3>I am a Computer Science student in NYC.</h3>
+			<div class="description">
+			<!-- 	<h3>I am a Computer Science student living in NYC.</h3> -->
+				<!--im going to use column-count here to split the description-->
+				<p1>I have an avid interest in learning new things and using them to create a variety of things.</p1>
+				<p1>I also like art, listening to foreign music I don't understand and reading.</p1>
+				<p1>I have experience in using Python, JavaScript, C++ to utilize in a variety of things starting from Web Development to Machine Learning.</p1>
+			</div>
+		</div>	
+
+
+		<!-- This is for the vertical line -->
+		<div class="vertical-line"></div>
+
+		<!--navigation next to about me-->
+		<div class="nav-list">
+			<ul>
+ 				<a href="#Home"><li id="-main-home-btn">Home</li></a>
+				<a href="#Inventory"><li id="main-inventory-btn">Inventory</li></a>
+				<a href="#ML-Progress"><li id="main-ml-btn">ML Progress</li></a>
+				<a href="#Contact"><li id="main-contact-btn">Contact</li></a>
+			</ul>
+		</div>
+	</div>
+
+
+	<!--portfolio section-->
+	<!--
+		For responsiveness, turn this section into a flexbox like the bottom ml section
+	-->
+	<!--masonry container-->
+	<span id="Inventory"></span>
+	<div class="masonry">
+		<h2>Inventory</h2>
+		<!--each of them acts as a masonry item-->
+		<div class="project">
+			<img src="peach-img.jpg" alt="a picture of a really cute peach">
+		</div>
+
+		<a href="https://hasanatjahan.github.io/Wikipedia_Searcher/" target="_blank">
+			<div class="project">
+				<img src="Wiki_img.png" alt="A duck on a plane background">
+				<h3>Wikipedia Searcher</h3>
+				<p2>Used JavaScript, jQuery to generate a response from the 3rd Party MediaWiki API to allow the user to search queries in a search box to find Wikipedia articles, and find random articles with a click of a button.</p2>
+				<p3>Quack the duck for an interesting surprise</p3>
+			</div>
+		</a>
+
+		<a href="https://hasanatjahan.github.io/Dad_Joke_Generator/" target="_blank">
+			<div class="project">
+				<img src="Dadjoke_img.png" alt="A yellow button with a display box with a tweet button underneath">
+				<h3>Dadjoke Generator- The Random Quote Generator</h3>
+				<p2>Used JavaScript to extract JSON data to generate a response from the 3rd Party Reddit API to display jokes from the famous dad joke thread to allow the user to find agony with a click of a button. It also allows the user to tweet about the website below each quote.</p2>
+			</div>
+		</a>
+
+		<a href="https://hasanatjahan.github.io/Weather-App/" target="_blank">
+			<div class="project">
+				<img src="Weatherapp-img.png">
+				<h3>Online Weather Viewer</h3>
+				<p2>Used JavaScript that used JSON data from successful API responses to display the weather of the user’s current location with a temperature toggle and weather icon</p2>
+			</div>
+		</a>
+
+		<a href="https://github.com/HasanatJahan/Unbeatable_TicTacToe" target="_blank">
+			<div class="project">
+				<img src="TicTacToe_img.png">
+				<h3>Unbeatable TicTacToe Using Minimax</h3>
+				<p2>The project is currently in development. Currently using Python and trying to implement a TicTacToe game, where the human plays against an AI that uses the MiniMax Algorithm to make the best move, assuming the human player plays optimally.</p2>
+			</div>
+		</a>
+
+		<div class="project">
+			<img src="strawberry-img.png" alt="a picture of a really cute strawberry">
+		</div>
+
+	</div>
+
+	<!--Machine Learning Section Here-->
+	<span id="ML-Progress"></span>
+	<div class="ml-section">
+		<h3>Interest in Machine Learning and AI</h3>
+		<a href="https://www.kaggle.com/c/cuny-data-challenge-2019/overview" target="_blank">
+			<div class="ml-project" id="kaggle-section">
+			<!-- <img src="TicTacToe_img.png"> -->
+			<h2>CUNY Data Challenge</h2>
+			<h3>Kaggle Competition</h3>
+			<p2>For our first-ever machine learning project, we learned and instrumented data encoding techniques using Pandas
+			Assimilated new models and implemented tuning in a short amount of time independently improving the performance by 0.87% </p2>
+			
+				<img src="analytics-img.png" alt="A picture of a genric pie chart and a graph">
+			</div>
+		</a>
+
+		<a href="https://medium.com/@LostinJello/things-my-first-ever-kaggle-competition-has-taught-me-3d75a9863ec5" target="_blank">
+			<div class="ml-project">
+				<h3>An article I wrote on my experience:</h3>
+				<img src="Article_img.jpg" alt="a bunch of numbers on screen">
+				<h2>Things My First Ever Machine Learning Competition Has Taught Me</h2>
+			</div>
+		</a>
+	</div>
+
+
+	<!--Contact Me Section-->
+	<span id="Contact"></span>
+	<div class="contact-me">
+		<h3>I am on</h3>
+		<div class="contact-box">
+			<a href="https://www.linkedin.com/in/hasanat-jahan-22a12b124/" target="_blank" id="linkedin-logo"><img src="linkedin-logo.png" alt="LinkedIn Logo"></a>
+			<a href="https://github.com/HasanatJahan" target="_blank" id="github-logo"><img src="github-logo2.png" alt="GitHub Logo"></a>
+			<a href="https://www.kaggle.com/hasanat" target="_blank" id="kaggle-logo"><img src="kaggle-logo3.png" alt="Kaggle Logo"></a>
+			<a href="https://codepen.io/HasanatJahan/" target="_blank" id="codepen-logo"><img src="codepen-logo.png" alt="Codepen Logo"></a>
+		</div>
+	</div>
+
+
+	<!--footer section-->
+	<footer class="footer">
+		<hr>
+		Thank you for visiting my site.<br>
+		Also all rights reserved by Hasanat Jahan. 
+	</footer>
+
+</body>
+</html>
