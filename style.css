@@ -60,7 +60,7 @@ body {
 	padding: 2em;
 	display: flex;
 	background-image: url("peony-img.png");
-	opacity: 0.7;
+	opacity: 0.8;
 	background-repeat: no-repeat;
 	background-position: right;
 	background-attachment: fixed;
@@ -75,9 +75,13 @@ body {
 
 .about-me-text{
 	display: inline-block;
+	width: 50vmin;
 	padding: 2em;
 }
 
+.description{
+	font-size: x-large;
+}
 
 .vertical-line{
 	width: 0.2em;
@@ -276,7 +280,7 @@ a .project:hover{
 }
 
 .footer{
-	color:#BAE1FF;
+	color:#3B8FCF;
 	padding: 1em;
 	text-align: center;
 	background: #E2F5F4;
