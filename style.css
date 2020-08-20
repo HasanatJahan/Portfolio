@@ -276,16 +276,37 @@ a .project:hover{
 	width: 100%;
 	padding-bottom: 4em;
 	overflow-x: hidden;
+	display: flex;
+	align-content: center;
 }
 
 .contact-box{
-	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: white;
+	margin: 1em;
+	padding: 2em;
+	opacity: 0.8;
+	border-radius: 2%;
+	text-decoration: none;
+	color: black;
+	display: grid;
+	top:0;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	transition: all 0.3s;
+	border-radius: 10%;
+}
+
+.contact-box:hover{
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,.14),0 7px 5px -2px rgba(0,0,0,.2),0 5px 9px 0 rgba(0,0,0,.12);
+	top:-4px;
+	transform: translateY(-4px);
+	transition: all 0.3s;
 }
 
 .contact-box img{
 	display: inline-block;
+	align-self: auto;
 	height: 5em;
 	width: 5em;
 	padding: 20%;
