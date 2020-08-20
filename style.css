@@ -336,8 +336,34 @@ hr{
 
 /*Making Responsive*/
 
-/*MAXIMUM SCREENS*/
+/* MAXIMUM SCREENS  */
+/* For ipads and ipad pros */
 @media (max-width: 1026px){
+	body{
+		overflow-x: clip;
+	}
+
+	.about-me{
+		width: 100vw;
+		overflow: hidden;
+		font-size: xx-large;
+	}
+
+	.side-nav{
+		padding-top: 0.5em;
+		margin-right: 0;
+		padding-right: 2em;
+		font-size: x-large;
+	}
+
+	.masonry{
+		padding-left: 2%;
+		padding-right: 5%;
+		column-gap: 0.2em;
+		column-count: 2;
+		width: 100vw;
+	}
+
 	.nav-list{
 		display: none;
 	}
@@ -347,9 +373,35 @@ hr{
 		padding-left: 2%;
 	}
 
-	.side-nav{
-		margin-right: 0;
-		padding-right: 0;
+	.ml-section{
+		flex-direction: column;
+		height: auto;
+		width: 100vw;
+	}
+
+	.contact-me{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 100vw;
+		margin-right: 20%;
+		align-self: auto;
+	}
+	
+	.contact-me h3{
+		font-size: xx-large;
+		align-self: center;
+		padding-left: 3em;
+	}
+
+	.contact-box{
+		align-items: center;
+		justify-content: center;
+	}
+
+	.side-nav ul li{
+		margin-right:0;
+		margin-top: 0;
 	}
 
 }
@@ -371,13 +423,18 @@ hr{
 		column-gap: 0.2em;
 		column-count: 2;
 		width: 100vw;
+		height: auto;
+
 	}
+
 	.project{
 		margin-right: 10%;
 	}
 
 	.ml-section{
 		width: 100vw;
+		height: auto;
+
 	}
 
 	.contact-me{
@@ -386,6 +443,8 @@ hr{
 		grid-template-rows: 0.25fr 0.25fr;
 		width: 100vw;
 		margin-right: 20%;
+		height: auto;
+
 	}
 
 	.contact-box{
@@ -411,7 +470,7 @@ hr{
 /* For small screens*/
 @media only screen and (max-width: 700px) and (min-width: 300px){
 	body{
-		overflow-x: hidden;
+		overflow-x: clip;
 	}
 
 	.masonry{
@@ -464,5 +523,3 @@ hr{
 		width: 100vw;
 	}
 }
-
-/*Making Responsive*/
