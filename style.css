@@ -163,7 +163,8 @@ body {
 	padding-top:3em; 
 	column-count: 4;
 	column-gap: 1em;
-	background: #BD9BC0;
+	background:  #BAE1FF;
+	/*background: #BD9BC0;*/
 	position: relative;
 	width: 100vw;
 	/*ADDING PADDING HERE TO CENTER- REMOVE WHEN YOU ADD MORE PROJECTS*/
@@ -185,16 +186,22 @@ body {
 	color: black;
 }
 
-a.project{
-	transition: border 0.7 linear;
+a .project{
+	/*transition: border 0.7 linear;*/
 	top:0;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	transition: all 0.25s;
+
 }
 
 a .project:hover{
-	border-width: 1em;
+	/*border-width: 1em;
 	border-bottom-style:solid ; 
-	border-color: #F1BBC9;
+	border-color: #F1BBC9;*/
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,.14),0 7px 5px -2px rgba(0,0,0,.2),0 5px 9px 0 rgba(0,0,0,.12);
 	top:-10px;
+	transform: translateY(-10px);
+	transition: all 0.25s;
 }
 
 .project h3{
@@ -211,7 +218,8 @@ a .project:hover{
 /*machine learning section*/
 .ml-section{
 	position: relative;
-	background:#E2F5F4;
+	/*background:#E2F5F4;*/
+	background: #5FA6D9; 
 	padding: 1.5em;
 	display: flex;
 }
@@ -346,7 +354,7 @@ hr{
 
 }
 
-/*For small screens*/
+/* For small screens*/
 @media only screen and (max-width: 700px) and (min-width: 300px){
 	.masonry{
 		padding-left: 2%;
