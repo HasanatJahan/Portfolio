@@ -138,6 +138,7 @@ body {
 	padding-top: 31vh;
 	line-height: 2em;
 	font-weight: bolder;
+	font-size: x-large;
 }
 
 .nav-list ul li{
@@ -350,12 +351,18 @@ hr{
 
 	.nav-list{
 		display: none;
+		font-size: xx-large;
 	}
 	
 	.side-nav{
 		padding-top: 1em;
 		margin-right: 0;
 		font-size: xx-large;
+	}
+
+	.side-nav ul li{
+		margin-right:0;
+		margin-top: 0;
 	}
 
 	.about-me{
@@ -388,13 +395,15 @@ hr{
 
 	.contact-me{
 		display: grid;
-		/* grid-auto-columns: 1fr 1fr; */
-		grid-auto-rows: 1fr 1fr;
+		grid-auto-columns: 0.25fr 0.25fr;
+		grid-auto-rows: 0.25fr 0.25fr;
 		width: 100vw;
 		margin-right: 20%;
-		align-self: auto;
+		align-self: center;
 		padding-right: 5%;
 		align-items: center;
+		position: relative;
+		align-content: center;
 	}
 	
 	.contact-me h3{
@@ -409,10 +418,6 @@ hr{
 		justify-content: center;
 	}
 
-	.side-nav ul li{
-		margin-right:0;
-		margin-top: 0;
-	}
 
 	.footer{
 		width: 100vw;
@@ -427,12 +432,20 @@ hr{
 /*For medium screens*/
 @media only screen and (max-width: 800px) and (min-width: 699px){
 	body{
-		overflow-x: hidden;
+		overflow-x: clip;
 	}
 
 	.side-nav{
 		padding-top: 0.5em;
+		margin-right:0;
+
 	}
+
+	.side-nav ul li{
+		margin-right: 0;
+		margin-top:0; 
+	}
+
 
 	.masonry{
 		padding-left: 2%;
@@ -469,14 +482,6 @@ hr{
 		justify-content: center;
 	}
 
-	.side-nav{
-		margin-right:0;
-	}
-
-	.side-nav ul li{
-		margin-right: 0;
-		margin-top:0; 
-	}
 
 	.footer{
 		width: 100vw;
@@ -487,29 +492,61 @@ hr{
 /* For small screens*/
 @media only screen and (max-width: 700px) and (min-width: 300px){
 	body{
-		overflow-x: clip;
+		overflow-x: hidden;
+		overflow: hidden;
+
+	}
+
+	.side-nav{
+		/* padding-right: 0.5em; */
+		margin-right: 0;
+		font-size: medium;
+		display: hidden;
+		overflow: hidden;
+
+	}
+
+	.side-nav ul li{
+		margin-right:0;
+		margin-top: 0;
+	}
+
+	.about-me{
+		font-size: medium;
+		padding-right: 5%;
+		overflow-x: hidden;
+
+	}
+
+	.description{
+		font-size: 1em;
 	}
 
 	.masonry{
+		width: 100vw;
 		padding-left: 2%;
 		padding-right: 5%;
 		column-gap: 1em; 
 		column-count: 1;
-		width: 100vw;
+		margin-right: 10%;
+		overflow-x: hidden;
 	}
 
 	.project{
-		margin-right: 10%;
+		margin-right: 5%;
 	}
 
 	.ml-section{
 		width: 100vw;
 		flex-direction: column;
 		height: auto;
+		padding-right: 5%;
+		overflow-x: hidden;
+
 	}
 
 	.ml-project{
-		margin-right: 20%;
+		margin-right: 10%;
 	}
 
 	.contact-me{
@@ -518,7 +555,10 @@ hr{
 		grid-template-columns: 0.25fr 0.25fr;
 		grid-template-rows: 0.25fr 0.25fr;
 		width: 100vw;
-		margin-right: 20%;
+		margin-right: 5%;
+		padding-right: 5%;
+		overflow-x: hidden;
+
 	}
 
 	.contact-box{
@@ -526,17 +566,9 @@ hr{
 		justify-content: center;
 	}
 
-	.side-nav{
-		padding-right: 0.5em;
-		margin-right: 0;
-	}
-
-	.side-nav ul li{
-		margin-right:0;
-		margin-top: 0;
-	}
-
 	.footer{
 		width: 100vw;
+		overflow-x: hidden;
+
 	}
 }
