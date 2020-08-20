@@ -81,6 +81,7 @@ body {
 
 .description{
 	font-size: x-large;
+	padding-right: 2em;
 }
 
 .vertical-line{
@@ -170,6 +171,8 @@ body {
 	/*ADDING PADDING HERE TO CENTER- REMOVE WHEN YOU ADD MORE PROJECTS*/
 	padding-left: 10%;
 	padding-bottom: 5%;
+	overflow-x: hidden;
+	display: center;
 }
 
 
@@ -187,10 +190,9 @@ body {
 }
 
 a .project{
-	/*transition: border 0.7 linear;*/
 	top:0;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-	transition: all 0.25s;
+	transition: all 0.3s;
 
 }
 
@@ -201,7 +203,7 @@ a .project:hover{
 	box-shadow: 0 6px 6px 0 rgba(0,0,0,.14),0 7px 5px -2px rgba(0,0,0,.2),0 5px 9px 0 rgba(0,0,0,.12);
 	top:-10px;
 	transform: translateY(-10px);
-	transition: all 0.25s;
+	transition: all 0.3s;
 }
 
 .project h3{
@@ -237,6 +239,16 @@ a .project:hover{
 	padding: 2em;
 	background-opacity: 0.8;
 	border-radius: 2%;
+	top:0;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	transition: all 0.3s;
+}
+
+.ml-project:hover{
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,.14),0 7px 5px -2px rgba(0,0,0,.2),0 5px 9px 0 rgba(0,0,0,.12);
+	top:-10px;
+	transform: translateY(-10px);
+	transition: all 0.3s;
 }
 
 
@@ -263,6 +275,7 @@ a .project:hover{
 	padding: 1.5em;
 	width: 100%;
 	padding-bottom: 4em;
+	overflow-x: hidden;
 }
 
 .contact-box{
