@@ -277,8 +277,9 @@ a .project:hover{
 	width: 100%;
 	padding-bottom: 4em;
 	overflow-x: hidden;
-	display: flex;
 	align-content: center;
+	align-items: center;
+	display: flex;
 }
 
 .contact-box{
