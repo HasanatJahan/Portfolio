@@ -336,13 +336,14 @@ hr{
 }
 
 
-/*Making Responsive*/
+/****************************   MAKING RESPONSIVE ******************************/
 
 /* MAXIMUM SCREENS  */
 @media (max-width: 1026px){
 	body{
 		overflow-x: hidden;
 		width: 100vw;
+		max-width: 100%;
 
 	}
 	
@@ -434,6 +435,7 @@ hr{
 @media only screen and (max-width: 800px) and (min-width: 699px){
 	body{
 		overflow-x: clip;
+		max-width: 100%;
 	}
 
 	.side-nav{
@@ -495,16 +497,23 @@ hr{
 	body{
 		overflow-x: hidden;
 		overflow-y: scroll;
+		max-width: 100%;
 
 	}
 
 	.side-nav{
 		/* padding-right: 0.5em; */
+		padding-top: 0;
 		margin-right: 0;
 		font-size: medium;
 		display: hidden;
 		overflow: hidden;
+	}
 
+	.side-nav ul{
+		padding: 0;
+		padding-left: 1em;
+		padding-top: 1em;
 	}
 
 	.side-nav ul li{
@@ -514,7 +523,9 @@ hr{
 
 	.about-me{
 		font-size: medium;
-		padding-right: 5%;
+		padding: 0;
+		/* padding-right: 5%; */
+		max-width: 100%;
 		overflow-x: hidden;
 
 	}
@@ -525,12 +536,15 @@ hr{
 
 	.masonry{
 		width: 100vw;
-		padding-left: 2%;
-		padding-right: 5%;
+		/* padding-left: 2%; */
+		/* padding-right: 5%; */
+		padding:0;
 		column-gap: 1em; 
 		column-count: 1;
 		margin-right: 10%;
 		overflow-x: hidden;
+		max-width: 100%;
+
 	}
 
 	.project{
@@ -541,25 +555,30 @@ hr{
 		width: 100vw;
 		flex-direction: column;
 		height: auto;
-		padding-right: 5%;
+		padding: 0em;
+		/* padding-right: 5%; */
 		overflow-x: hidden;
-
+		max-width: 100%;
 	}
 
 	.ml-project{
-		margin-right: 10%;
+		margin-right: 5%;
+
 	}
 
 	.contact-me{
 		/* display: inline-block; */
+		padding: 0;
+		padding-bottom: 4em;
+
 		display: grid;
 		grid-template-columns: 0.25fr 0.25fr;
 		grid-template-rows: 0.25fr 0.25fr;
 		width: 100vw;
-		margin-right: 5%;
-		padding-right: 5%;
+		/* margin-right: 5%; */
+		/* padding-right: 5%; */
 		overflow-x: hidden;
-
+		max-width: 100%;
 	}
 
 	.contact-box{
@@ -568,8 +587,11 @@ hr{
 	}
 
 	.footer{
+		padding: 0;
+		padding-bottom: 1em;
 		width: 100vw;
 		overflow-x: hidden;
+		max-width: 100%;
 
 	}
 }
