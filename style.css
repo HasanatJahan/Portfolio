@@ -339,7 +339,7 @@ hr{
 /****************************   MAKING RESPONSIVE ******************************/
 
 /* MAXIMUM SCREENS  */
-@media (max-width: 1026px){
+@media (max-width: 1024px){
 	body{
 		overflow-x: hidden;
 		width: 100vw;
@@ -357,55 +357,76 @@ hr{
 	}
 	
 	.side-nav{
+		padding: 0;
 		padding-top: 1em;
+		padding-right: 0;
 		margin-right: 0;
 		font-size: xx-large;
 	}
 
+	.side-nav ul{
+		padding: 0;
+		padding-right: 0;
+		margin-right: 0;
+	}
+
 	.side-nav ul li{
+		padding-right: 0;
 		margin-right:0;
 		margin-top: 0;
 	}
 
 	.about-me{
 		overflow-x: hidden;
-		font-size: x-large;
+		font-size: xx-large;
 		width: 100vw;
 		height: 100vh;
 		max-width: 100%;
-		padding-right: 5%;
-		padding-left: 2%;
+		padding: 0;
+		/* padding-right: 5%;
+		padding-left: 2%; */
 		padding-top: 0;
 
 	}
 
 	.masonry{
-		padding-left: 2%;
-		padding-right: 5%;
+		padding: 0;
+		/* padding-left: 2%;
+		padding-right: 5%; */
 		column-gap: 0.2em;
 		column-count: 2;
 		width: 100vw;
 	}
 
+	.masonry h2{
+		padding-left: 3%;
+	}
+
 
 	.ml-section{
-		flex-direction: column;
+		flex-direction: row;
 		height: auto;
 		width: 100vw;
-		padding-right: 5%;
+		padding: 0;
+		/* padding-right: 5%; */
+	}
+
+	.ml-section h3{
+		padding-left: 3%;
 	}
 
 	.contact-me{
-		display: grid;
-		grid-auto-columns: 0.25fr 0.25fr;
-		grid-auto-rows: 0.25fr 0.25fr;
+		display: flex;
+		/* grid-auto-columns: 0.25fr 0.25fr;
+		grid-auto-rows: 0.25fr 0.25fr; */
 		width: 100vw;
 		margin-right: 20%;
 		align-self: center;
-		padding-right: 5%;
+		/* padding-right: 5%; */
 		align-items: center;
 		position: relative;
-		align-content: center;
+		/* align-content: center; */
+		padding: 0;
 	}
 	
 	.contact-me h3{
@@ -423,7 +444,8 @@ hr{
 
 	.footer{
 		width: 100vw;
-		padding-right: 5%;
+		padding: 0;
+		padding-bottom: 1%;
 	}
 
 	
@@ -431,7 +453,7 @@ hr{
 }
 
 
-/*For medium screens*/
+/*For MEDIUM screens*/
 @media only screen and (max-width: 800px) and (min-width: 699px){
 	body{
 		overflow-x: clip;
@@ -439,25 +461,38 @@ hr{
 	}
 
 	.side-nav{
-		padding-top: 0.5em;
+		/* padding-top: 0.5em; */
+		padding: 0;
 		margin-right:0;
 
 	}
 
+	.side-nav ul{
+		padding: 0;
+		padding-top: 1em;
+		padding-right: 1em;
+	}
+
 	.side-nav ul li{
+		padding-right: 0;
 		margin-right: 0;
 		margin-top:0; 
 	}
 
 
 	.masonry{
-		padding-left: 2%;
-		padding-right: 5%;
+		/* padding-left: 2%;
+		padding-right: 5%; */
+		padding: 0;
 		column-gap: 0.2em;
 		column-count: 2;
 		width: 100vw;
 		height: auto;
 
+	}
+
+	.masonry h2{
+		padding-left: 3%;
 	}
 
 	.project{
@@ -468,6 +503,10 @@ hr{
 		width: 100vw;
 		height: auto;
 
+	}
+
+	.ml-section h3{
+		padding-left: 3%;
 	}
 
 	.contact-me{
@@ -492,7 +531,7 @@ hr{
 
 }
 
-/* For small screens*/
+/* For SMALL screens*/
 @media only screen and (max-width: 700px) and (min-width: 300px){
 	body{
 		overflow-x: hidden;
