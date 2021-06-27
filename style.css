@@ -275,7 +275,8 @@ a .project:hover{
 
 /*contact me section*/
 .contact-me{
-	margin-top: 2%;
+	/* margin-top: 2%; */
+	display: flex;
 	background: #BAE1FF;
 	position: relative;
 	padding: 1.5em;
@@ -284,12 +285,13 @@ a .project:hover{
 	overflow-x: hidden;
 	align-content: center;
 	align-items: center;
-	display: flex;
 }
 
 .contact-box{
 	align-items: center;
-	justify-content: center;
+	height: 5em;
+	width: 5em;
+	/* justify-content: center; */
 	background-color: white;
 	margin: 1em;
 	padding: 2em;
@@ -297,7 +299,7 @@ a .project:hover{
 	border-radius: 2%;
 	text-decoration: none;
 	color: black;
-	display: grid;
+	/* display: grid; */
 	top:0;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 	transition: all 0.3s;
@@ -313,10 +315,10 @@ a .project:hover{
 
 .contact-box img{
 	display: inline-block;
-	align-self: auto;
+	text-align: center;
 	height: 5em;
 	width: 5em;
-	padding: 20%;
+	padding: 5%;
 }
 
 #github-logo{
