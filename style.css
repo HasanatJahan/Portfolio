@@ -110,8 +110,8 @@ body {
 
 .about-me h1{
 	color: #F8EDC2;
-	font-family: 'Libre Barcode 39 Text', cursive;
-	font-size: 4em;
+	/* font-family: 'Libre Barcode 39 Text', cursive; */
+	font-size: 3.5em;
 	font-weight: lighter;
 }
 
