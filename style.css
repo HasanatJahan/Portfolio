@@ -129,7 +129,7 @@ body {
 .nav-list{
 	float: left;
 	margin-left: 2%;
-	color: #F8EDC2;
+	color: #792269;
 	text-decoration: none;
 	list-style-type: none;
 	display: inline-block;
@@ -143,10 +143,14 @@ body {
 
 .nav-list ul li{
 	list-style: none;
+	color: #792269;
+	background: yellow;
+	margin-bottom: 1em;
+	padding: 0.2em;
 }
 
 .nav-list  a{
-	color: #F8EDC2;
+	margin-bottom: 2em;
 }
 
 .nav-list ul li:hover{
