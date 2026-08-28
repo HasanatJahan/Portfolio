@@ -152,7 +152,7 @@ p {
 }
 
 .bio p {
-	max-width: 62ch;
+	max-width: 75ch;
 }
 
 .social-links {
@@ -189,13 +189,12 @@ p {
 .role-company {
 	color: var(--text-muted);
 	margin: 0.2em 0 0.9em;
-	max-width: 65ch;
 }
 
 .role-entry ul {
 	margin: 0;
 	padding-left: 1.2em;
-	max-width: 65ch;
+	max-width: 85ch;
 }
 
 .role-entry li {
@@ -208,7 +207,7 @@ p {
 	border-top: 1px solid var(--divider);
 	padding-top: 1.5em;
 	margin-bottom: 0;
-	max-width: 65ch;
+	max-width: 85ch;
 }
 
 /* skills */
@@ -233,19 +232,9 @@ p {
 .skills-list dd {
 	margin: 0;
 	color: var(--text-secondary);
-	max-width: 55ch;
 }
 
 /* projects */
-.subheading {
-	margin: 3em 0 1.5em;
-	padding-top: 2.5em;
-	border-top: 1px solid var(--divider);
-	font-size: 1.1em;
-	color: var(--text-primary);
-	font-weight: normal;
-}
-
 .project-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -253,6 +242,10 @@ p {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+#projects.wrap {
+	padding-bottom: 5em;
 }
 
 .project-card {
@@ -289,31 +282,20 @@ p {
 	margin-bottom: 0;
 }
 
-/* footer */
-.site-footer {
-	color: var(--text-secondary);
-	padding-bottom: 5em;
-}
-
-.site-footer p {
-	max-width: 65ch;
-}
-
-#copy-email {
+.copy-email {
 	font-family: inherit;
 	font-size: inherit;
 	color: var(--text-primary);
 	background: none;
 	border: none;
 	padding: 0;
-	margin-left: 0.2em;
 	text-decoration: underline;
 	text-decoration-color: var(--divider);
 	text-underline-offset: 3px;
 	cursor: pointer;
 }
 
-#copy-email:hover {
+.copy-email:hover {
 	color: var(--text-muted);
 }
 
