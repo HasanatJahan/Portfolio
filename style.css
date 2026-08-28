@@ -235,15 +235,6 @@ p {
 }
 
 /* projects */
-.subheading {
-	margin: 3em 0 1.5em;
-	padding-top: 2.5em;
-	border-top: 1px solid var(--divider);
-	font-size: 1.1em;
-	color: var(--text-primary);
-	font-weight: normal;
-}
-
 .project-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
