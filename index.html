@@ -1,23 +1,67 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <meta charset="UTF-8">
-<html>
+<html lang="en">
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<!-- This part was added here for the scrolling -->
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<!-- <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script> -->
-	<script type="text/javascript" src="main.js"></script>
-
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
-	<title>Hasanat Jahan Portfolio</title>
+	<title>Hasanat Jahan | Software Engineer, AI & Machine Learning</title>
+	<meta name="description"
+		content="Hasanat Jahan is a full-stack software engineer building automation and machine learning systems for real-world platforms. She currently works on healthcare claims infrastructure at Smarter Technologies, and previously built distributed database systems on AWS's Aurora team.">
+	<link rel="canonical" href="https://hasanatjahan.github.io/Portfolio/">
 	<link rel="icon" href="Images/strawberry-img.png" type="image/icon type">
 
 	<!-- Required for responsive web design -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hasanatjahan.github.io/Portfolio/">
+	<meta property="og:site_name" content="Hasanat Jahan">
+	<meta property="og:title" content="Hasanat Jahan | Software Engineer, AI & Machine Learning">
+	<meta property="og:description"
+		content="Full-stack software engineer building automation and machine learning systems, with experience on AWS's Aurora database team and healthcare claims infrastructure at Smarter Technologies.">
+	<meta property="og:image" content="https://hasanatjahan.github.io/Portfolio/Images/hasanat-jahan-og-image.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Hasanat Jahan | Software Engineer, AI & Machine Learning">
+	<meta name="twitter:description"
+		content="Full-stack software engineer building automation and machine learning systems, with experience on AWS's Aurora database team and healthcare claims infrastructure at Smarter Technologies.">
+	<meta name="twitter:image" content="https://hasanatjahan.github.io/Portfolio/Images/hasanat-jahan-og-image.png">
+
+	<!-- Structured data -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Hasanat Jahan",
+	  "url": "https://hasanatjahan.github.io/Portfolio/",
+	  "jobTitle": "Full-Stack Software Engineer",
+	  "worksFor": {
+	    "@type": "Organization",
+	    "name": "Smarter Technologies"
+	  },
+	  "alumniOf": {
+	    "@type": "CollegeOrUniversity",
+	    "name": "Queens College"
+	  },
+	  "sameAs": [
+	    "https://www.linkedin.com/in/hasanat-jahan-22a12b124/",
+	    "https://github.com/HasanatJahan"
+	  ],
+	  "knowsAbout": [
+	    "Software Engineering",
+	    "Machine Learning",
+	    "Automation",
+	    "Distributed Systems",
+	    "Amazon Web Services"
+	  ]
+	}
+	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147421897-1"></script>
@@ -32,297 +76,301 @@
 </head>
 
 <body>
-	<!--the side navbar section-->
-	<div class="side-nav">
-		<ul>
-			<a href="#Home">
-				<li id="home-btn">Home</li>
-			</a>
-			<!-- <a href="#Contact"><li id="contact-btn">Contact</li></a> -->
-			<a href="#Inventory">
-				<li id="inventory-btn">Projects</li>
-			</a>
-			<a href="#ML-Progress">
-				<li id="ml-btn">Machine Learning</li>
-			</a>
-		</ul>
-	</div>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-	<!--Page content-->
+	<header class="site-header wrap">
+		<div class="header-grid">
+			<div class="header-text">
+				<div class="header-top">
+					<div>
+						<h1>Hasanat Jahan</h1>
+						<p class="role">Full-Stack Software Engineer</p>
+						<p class="focus">Distributed Systems &middot; Automation &middot; AI &middot; Machine Learning</p>
+					</div>
+					<nav aria-label="Primary">
+						<a href="#experience">Experience</a>
+						<a href="#projects">Projects</a>
+						<a href="#contact">Contact</a>
+						<a href="hasanat-jahan-resume.pdf" download>Resume &#8595;</a>
+					</nav>
+				</div>
 
-	<span id="Home"></span>
-	<!--about me section-->
-	<div class="about-me">
-		<div class="about-me-text">
-			<h1>Hi There,
-				<br>I'm Hasanat Jahan
-			</h1>
-			<h2>Software Development Engineer</h2>
-			<div class="description">
-				<!--im going to use column-count here to split the description-->
-				<p1> Results-driven Software Engineer with expertise in designing, implementing, and optimizing systems,
-					particularly in database technologies with a focus on Aurora.
-					Proven ability to collaborate with cross-functional teams and deliver high-impact solutions.
-					Previously contributing to Amazon Web Services' Aurora Team, known for a strong work ethic,
-					attention to detail, and positive team dynamics.</p1>
-				<br>
-				<p1>I like art, language, reading, writing and finding ideas in everyday life.</p1>
+				<div class="bio">
+					<p>I'm a full-stack software engineer who builds automation and machine learning systems for
+						real-world data platforms. I currently work on healthcare claims infrastructure at Smarter
+						Technologies, building distributed services and automation for claims and remittance
+						processing. Previously, I was a Software Development Engineer on Amazon Web Services' Aurora
+						Global Database team, where I designed distributed systems and monitoring for AWS's managed
+						database service.</p>
+					<p>Outside of engineering, I read, write, and occasionally make art.</p>
+				</div>
+
+				<p class="social-links">
+					<a href="https://www.linkedin.com/in/hasanat-jahan-22a12b124/" target="_blank">LinkedIn</a>
+					<a href="https://github.com/HasanatJahan" target="_blank">GitHub</a>
+				</p>
 			</div>
 
-
-			<div class="contact-me">
-
-				<div class="contact-box">
-					<a href="https://www.linkedin.com/in/hasanat-jahan-22a12b124/" target="_blank" id="linkedin-logo">
-						<img src="Images/linkedin-logo.png" alt="LinkedIn Logo">
-					</a>
-				</div>
-				<div class="contact-box">
-					<a href="https://github.com/HasanatJahan" target="_blank" id="github-logo">
-						<img src="Images/github-logo2.png" alt="GitHub Logo">
-					</a>
-				</div>
-
-				<div class="contact-box">
-					<a href="https://www.kaggle.com/hasanat" target="_blank" id="kaggle-logo">
-						<img src="Images/kaggle-logo4.png" alt="Kaggle Logo">
-					</a>
-				</div>
-				<div class="contact-box">
-					<a href="https://codepen.io/HasanatJahan/" target="_blank" id="codepen-logo">
-						<img src="Images/codepen-logo.png" alt="Codepen Logo">
-					</a>
-				</div>
-			</div>
-
+			<img class="header-portrait" src="Images/hasanat-jahan-self-portrait-illustration.jpg"
+				alt="Self-portrait illustration by Hasanat Jahan, a hand-drawn ink profile with a yellow outline"
+				width="820" height="1408">
 		</div>
+	</header>
 
-		<!-- This is for the vertical line -->
-		<div class="vertical-line"></div>
+	<main id="main">
 
-		<!--navigation next to about me-->
-		<div class="nav-list">
-			<ul>
-				<a href="#Home">
-					<li id="-main-home-btn">Home</li>
+		<section id="experience" class="wrap" aria-labelledby="experience-heading">
+			<h2 id="experience-heading">Experience</h2>
+
+			<article class="role-entry">
+				<div class="role-entry-head">
+					<h3>Software Engineer, Platform</h3>
+					<span class="role-dates">Jul 2025 &ndash; Present</span>
+				</div>
+				<p class="role-company">Smarter Technologies &middot; previously Forward Deployed Engineer</p>
+				<ul>
+					<li>Architected Enhanced Claims Status in Python, FastAPI, and Temporal, unifying EDI 277/835
+						data across Stedi, Availity, Waystar, and payer channels, reaching 90%+ AI disposition
+						accuracy across 15,000+ UAT claims and cutting AR follow-up time from 15&ndash;25 minutes to
+						under 5.</li>
+					<li>Built payer-ID crosswalks, claim-ID normalization, and X12 parsing across major payers
+						including UHC, Cigna, and BCBS, improving claim-matching reliability and downstream data
+						consistency.</li>
+					<li>Built AI-assisted migration and code-review tooling using Python AST analysis and Cursor AI,
+						cutting portal development time by 60% and automating migrations across 20+ payer packages.
+					</li>
+					<li>Operated distributed services with OpenTelemetry, AWS, Kubernetes, Docker, and Terraform,
+						supporting 100,000+ monthly claims transactions while reducing transaction exception rates to
+						4%.</li>
+				</ul>
+			</article>
+
+			<article class="role-entry">
+				<div class="role-entry-head">
+					<h3>Software Development Engineer</h3>
+					<span class="role-dates">Sep 2022 &ndash; Mar 2024</span>
+				</div>
+				<p class="role-company">Amazon Web Services &middot; Aurora Global Database</p>
+				<ul>
+					<li>Led end-to-end design and implementation of distributed monitoring for Aurora Global
+						Database's flagship feature, improving visibility into system health while maintaining
+						high availability, low latency, and cost efficiency.</li>
+					<li>Streamlined PostgreSQL data flows, implementing change data capture and snapshot handling,
+						and integrated monitoring into the broader Aurora architecture, increasing the reliability
+						and efficiency of data handling.</li>
+					<li>Designed and deployed customer-facing monitoring and alerting (metrics, logs, dashboards,
+						and internal APIs) to detect anomalies quickly and reduce time to resolution for distributed
+						database workloads.</li>
+					<li>Contributed to full-stack development in Java, Python, and C++, participating in design and
+						code reviews and collaborating with front-end teams to ship high-quality, testable features.
+					</li>
+					<li>Built a comprehensive automated testing infrastructure (unit, integration, end-to-end, and
+						CI pipelines) that improved release confidence and reduced regressions, and developed
+						internal tools and troubleshooting workflows that enabled faster root-cause analysis in
+						production.</li>
+					<li>Mentored new hires and interns, creating onboarding resources and pairing on critical
+						systems, which reduced onboarding time and strengthened team performance.</li>
+				</ul>
+			</article>
+
+			<p class="role-earlier">Before that, I was a Data Science Student in Microsoft's Data Science Summer
+				School. I studied Computer Science with a minor in Computational Linguistics at Queens College,
+				graduating Summa Cum Laude with a 3.96 GPA (Phi Beta Kappa).</p>
+		</section>
+
+		<section id="skills" class="wrap" aria-labelledby="skills-heading">
+			<h2 id="skills-heading">Skills</h2>
+			<dl class="skills-list">
+				<div>
+					<dt>Programming &amp; Backend</dt>
+					<dd>Python, Java, C++, C, JavaScript, SQL, PHP, R; FastAPI, Pydantic, Node.js, Express.js,
+						React.js, MongoDB, REST APIs, Microservices, Temporal</dd>
+				</div>
+				<div>
+					<dt>Cloud &amp; Distributed Systems</dt>
+					<dd>AWS (EC2, S3, RDS, Aurora, Lambda, CloudFormation, CloudWatch), Kubernetes, Docker,
+						Terraform/OpenTofu, PostgreSQL, CDC, Distributed Systems</dd>
+				</div>
+				<div>
+					<dt>AI &amp; Operations</dt>
+					<dd>AI evaluation &amp; UAT, AI-assisted developer tooling, OpenTelemetry, HyperDX, CI/CD,
+						Monitoring, Alerting, Production Troubleshooting</dd>
+				</div>
+				<div>
+					<dt>Healthcare</dt>
+					<dd>EDI/X12 (835, 837, 277, 271), Claims Status, Remittance Advice, Eligibility, Payer &amp;
+						Clearinghouse Integrations</dd>
+				</div>
+			</dl>
+		</section>
+
+		<section id="projects" class="wrap" aria-labelledby="projects-heading">
+			<h2 id="projects-heading">Projects</h2>
+
+			<div class="project-list">
+
+				<a class="project-card" href="https://github.com/HasanatJahan/Movie-Review-Classification-Naive-Bayes" target="_blank">
+					<img src="Images/hasanat-jahan-sentiment-classification-icon.png"
+						alt="Happy and sad face icons illustrating sentiment analysis" loading="lazy" width="335"
+						height="154">
+					<h3>Movie Review Sentiment Classification With Naive Bayes</h3>
+					<p class="project-description">A Naive Bayes classifier built in Python that classifies IMDB
+						movie review sentiment, reaching 89.712% accuracy with optimizations.</p>
 				</a>
-				<!-- <a href="#Contact"><li id="main-contact-btn">Contact</li></a> -->
-				<a href="#Inventory">
-					<li id="main-inventory-btn">Projects</li>
+
+				<a class="project-card" href="https://github.com/HasanatJahan/train-word2vec" target="_blank">
+					<img src="Images/hasanat-jahan-word2vec-similarity-output.png"
+						alt="Output listing word similarity scores from a Word2Vec model, such as 'dirty' and 'clean' at 0.38"
+						loading="lazy" width="480" height="324">
+					<h3>Word Similarity with Word2Vec</h3>
+					<p class="project-description">Trained a Word2Vec model in Python to calculate similarity
+						between words in vector space.</p>
 				</a>
-				<a href="#ML-Progress">
-					<li id="main-ml-btn">Machine Learning</li>
+
+				<a class="project-card" href="https://github.com/HasanatJahan/NLP-MLE-Language-Models" target="_blank">
+					<img src="Images/hasanat-jahan-mle-language-modeling-diagram.png"
+						alt="Diagram illustrating a maximum likelihood estimate language model predicting the next word in a sentence"
+						loading="lazy" width="795" height="281">
+					<h3>Maximum Likelihood Estimate Language Modeling</h3>
+					<p class="project-description">Built and trained generative MLE language models in Python
+						(unigram, bigram, and bigram with add-one smoothing), evaluated through perplexity
+						calculations.</p>
 				</a>
-				<a href="https://docs.google.com/document/d/165GzbPCjrvNFGzksET2hwKvUCZfVtPWcFBywNj4__VA/edit?usp=sharing"
+
+				<a class="project-card"
+					href="https://htmlpreview.github.io/?https://github.com/msr-ds3/predicting-the-present-2020-group-2/blob/master/Testing_Models/testing_auto_predictions.nb.html"
 					target="_blank">
-					<li>Resume</li>
+					<img src="Images/hasanat-jahan-google-trends-research-chart.png"
+						alt="Scatter plot comparing actual and predicted values from research extending 'Predicting the Present with Google Trends'"
+						loading="lazy" width="1032" height="648">
+					<h3>Extending "Predicting the Present with Google Trends"</h3>
+					<p class="project-description">Replicated results from Choi and Varian's research on Motor
+						Vehicle and Parts trends, then extended it to show that a rigorous baseline using public
+						Census data performs almost as well as trends data alone.</p>
 				</a>
-			</ul>
-		</div>
 
-	</div>
+				<!-- Automated Documentation Generator -->
+				<a class="project-card" href="https://github.com/HasanatJahan/codebase-doc-generator" target="_blank">
+					<img src="Images/hasanat-jahan-documentation-generator-readme.png"
+						alt="README screenshot of the Documentation Generator tool describing its features and installation steps"
+						loading="lazy" width="800" height="679">
+					<h3>Documentation Generator</h3>
+					<p class="project-description">An automated tool that leverages the GitHub and Greptile APIs to
+						index repositories, generate README files, and streamline the documentation workflow.</p>
+				</a>
 
-	<!--portfolio section-->
-	<!--
-		For responsiveness, turn this section into a flexbox like the bottom ml section
-	-->
-	<!--masonry container-->
-	<span id="Inventory"></span>
-	<div class="masonry">
-		<h1>Personal Projects</h1><br>
-		<!--each of them acts as a masonry item-->
-		<!-- <div class="project">
-			<img src="peach-img.jpg" alt="a picture of a really cute peach">
-		</div> -->
-		<!-- TODO: move paragraph text to separate file and pull in here -->
+				<!-- Unbeatable TicTacToe -->
+				<a class="project-card" href="https://github.com/HasanatJahan/Unbeatable_TicTacToe" target="_blank">
+					<img src="Images/hasanat-jahan-tictactoe-minimax-cli.png"
+						alt="Terminal output of a command-line Tic-Tac-Toe game showing the game board and a move prompt"
+						loading="lazy" width="810" height="312">
+					<h3>Unbeatable TicTacToe Using Minimax</h3>
+					<p class="project-description">Command-Line-Interface TicTacToe game played against a bot. The
+						Minimax algorithm, implemented in Python, ensures the human opponent never wins.</p>
+				</a>
 
-		<!-- Automated Documentation Generator -->
-		<a href="https://github.com/HasanatJahan/codebase-doc-generator" target="_blank">
-			<div class="project">
-				<img src="Images/Greptile-Project.png">
-				<h3>Documentation Generator</h3>
-				<p2>Documentation Generator is an automated tool designed to simplify the process of creating
-					documentation
-					for codebases.
-					It leverages the power of GitHub and Greptile APIs to index repositories, generate README files, and
-					streamline the documentation workflow.
-				</p2>
-			</div>
-		</a>
+				<!-- Simple React App -->
+				<a class="project-card" href="https://github.com/HasanatJahan/React-Writer-Blog/tree/main" target="_blank">
+					<img src="Images/hasanat-jahan-react-blog-app.png"
+						alt="Screenshot of The Dojo Blog, a React blog app listing several blog posts" loading="lazy"
+						width="1178" height="801">
+					<h3>React Blog App</h3>
+					<p class="project-description">A simple blog app built with React, featuring basic CRUD
+						functionality, client-side routing, and a JSON server for mock data.</p>
+				</a>
 
-		<!-- Unbeatable TicTacToe -->
-		<a href="https://github.com/HasanatJahan/Unbeatable_TicTacToe" target="_blank">
-			<div class="project">
-				<img src="Images/TicTacToe.png">
-				<h3>Unbeatable TicTacToe Using Minimax</h3>
-				<p2>Command-Line-Interface TicTacToe game played against a bot.
-					The Minimax algorithm implemented using Python ensures that the human opponent never wins.
-				</p2>
-			</div>
-		</a>
+				<!-- Simple CRUD App -->
+				<a class="project-card" href="https://github.com/HasanatJahan/simple-crud-app-backend" target="_blank">
+					<img src="Images/hasanat-jahan-mern-stack-crud-api.png"
+						alt="MERN stack logo graphic representing MongoDB, Express, React, and Node.js" loading="lazy"
+						width="1920" height="1080">
+					<h3>CRUD App Backend</h3>
+					<p class="project-description">A simple backend API for managing products using Node.js,
+						Express, and MongoDB. Supports basic CRUD operations and JSON data exchange.</p>
+				</a>
 
+				<a class="project-card" href="https://hasanatjahan.github.io/Wikipedia_Searcher/" target="_blank">
+					<img src="Images/hasanat-jahan-wikipedia-searcher-app.png"
+						alt="Screenshot of the WikiDiver app with a duck illustration, search box, and a list of Wikipedia article results"
+						loading="lazy" width="937" height="859">
+					<h3>Wikipedia Searcher</h3>
+					<p class="project-description">Uses JavaScript and jQuery against the MediaWiki API to search
+						Wikipedia articles from a search box, or pull up a random article with one click.</p>
+					<p class="project-note">Quack the duck for an interesting surprise.</p>
+				</a>
 
-		<!-- Simple React App -->
-		<a href="https://github.com/HasanatJahan/React-Writer-Blog/tree/main" target="_blank">
-			<div class="project">
-				<img src="Images/react-blog-img.png">
-				<h3>React Blog App</h3>
-				<p2> A simple blog app built with React, featuring basic CRUD functionality,
-					client-side routing, and a JSON server for mock data.
-				</p2>
-			</div>
-		</a>
+				<a class="project-card" href="https://hasanatjahan.github.io/Weather-App/" target="_blank">
+					<img src="Images/hasanat-jahan-weather-app.png"
+						alt="Weather app screenshot showing a rain icon, 16°C temperature, and Queens County, US location"
+						loading="lazy" width="1374" height="877">
+					<h3>Online Weather Viewer</h3>
+					<p class="project-description">Displays the weather for the user's current location from a
+						JSON API response, with a temperature toggle and weather icon.</p>
+				</a>
 
-
-		<!-- Simple CRUD App -->
-		<a href="https://github.com/HasanatJahan/simple-crud-app-backend" target="_blank">
-			<div class="project">
-				<img src="Images/mern-img.png">
-				<h3>CRUD App Backend</h3>
-				<p2> A simple backend API for managing products using Node.js, Express, and MongoDB.
-					Supports basic CRUD operations and JSON data exchange.
-				</p2>
-			</div>
-		</a>
-
-		<!-- -->
-		<a href="https://github.com/HasanatJahan/CS355_Final_Project" target="_blank">
-			<div class="project">
-				<img src="Images/Shibe-Image.png">
-				<h3>Imgur Shibe Poster</h3>
-				<p2> A web application that allows users to automatically post random Shiba Inu pictures to their Imgur
-					account with a single click.
-					This script automatically authenticates with the Imgur API and fetches random Shiba Inu images from
-					the shibe.online API, posting them directly to the user's Imgur account.
-					It includes automatic token caching for improved performance and uses timestamp-based titles for the
-					uploaded images.
-				</p2>
-			</div>
-		</a>
-
-		<a href="https://htmlpreview.github.io/?https://github.com/msr-ds3/predicting-the-present-2020-group-2/blob/master/Testing_Models/testing_auto_predictions.nb.html"
-			target="_blank">
-			<div class="project">
-				<img src="Images/research_img.png">
-				<h3>Exploring an Extension of "Predicting the Present with Google Trends" by Choi and Varian by
-					Investigating Improved Baseline Features </h3>
-				<p2>Worked with a teammate to replicate the results of Motor Vehicle and Parts of "Predicting the
-					Present with Google Trends" by Choi and Varian.
-					We then extend the investigation to demonstrate that even if the trends data is helpful under
-					circumstances, a more rigorous and relevant baseline model using public Census data performs almost
-					just as well.
-					We worked to provide a direction that exemplified a caveat to directly using Google Trends data for
-					predictions.
-				</p2>
+				<a class="project-card" href="https://github.com/HasanatJahan/CS355_Final_Project" target="_blank">
+					<img src="Images/hasanat-jahan-imgur-shibe-poster.png"
+						alt="Shiba Inu dog photo above a button to post the image to Imgur" loading="lazy"
+						width="966" height="886">
+					<h3>Imgur Shibe Poster</h3>
+					<p class="project-description">A web application that authenticates with the Imgur API and
+						fetches random Shiba Inu images from the shibe.online API, posting them directly to a user's
+						Imgur account with automatic token caching.</p>
+				</a>
 
 			</div>
-		</a>
 
-		<a href="https://github.com/HasanatJahan/Movie-Review-Classification-Naive-Bayes" target="_blank">
-			<div class="project">
-				<img src="Images/sentiment-img.png">
-				<h3>Movie Review Sentiment Classification With Naive Bayes</h3>
-				<p2>Used Python to build a Naive Bayes Classifier that classfied sentiments of IMDB movie reviews to
-					with highest 89.712% accuracy with optimizations.</p2>
+			<h3 class="subheading">Machine Learning</h3>
+			<div class="project-list">
+
+				<a class="project-card" href="https://www.kaggle.com/c/cuny-data-challenge-2019/overview" target="_blank">
+					<img src="Images/hasanat-jahan-cuny-data-challenge-analytics-icon.png"
+						alt="Bar chart and pie chart icons representing data analytics from the CUNY Data Challenge"
+						loading="lazy" width="960" height="500">
+					<h3>CUNY Data Challenge</h3>
+					<p class="project-description">A first machine learning project applying Pandas-based data
+						encoding techniques and model tuning, independently improving performance by 0.87%.</p>
+				</a>
+
+				<a class="project-card"
+					href="https://medium.com/@LostinJello/things-my-first-ever-kaggle-competition-has-taught-me-3d75a9863ec5"
+					target="_blank">
+					<img src="Images/hasanat-jahan-machine-learning-article-cover.jpg"
+						alt="Close-up photo of numeric data on a screen, illustrating an article about a first Kaggle competition"
+						loading="lazy" width="1200" height="801">
+					<h3>Things My First Ever Machine Learning Competition Has Taught Me</h3>
+					<p class="project-description">An article reflecting on lessons from a first Kaggle
+						competition.</p>
+				</a>
+
 			</div>
-		</a>
+		</section>
 
-		<a href="https://hasanatjahan.github.io/Wikipedia_Searcher/" target="_blank">
-			<div class="project">
-				<img src="Images/Wiki_img.PNG" alt="A duck on a plane background">
-				<h3>Wikipedia Searcher</h3>
-				<p2>Used JavaScript, jQuery to generate a response from the 3rd Party MediaWiki API to allow the user to
-					search queries in a search box to find Wikipedia articles, and find random articles with a click of
-					a button.</p2>
-				<p3>Quack the duck for an interesting surprise</p3>
-			</div>
-		</a>
+	</main>
 
-
-		<a href="https://hasanatjahan.github.io/Dad_Joke_Generator/" target="_blank">
-			<div class="project">
-				<img src="Images/Dadjoke_img.PNG"
-					alt="A yellow button with a display box with a tweet button underneath">
-				<h3>Dadjoke Generator- The Random Quote Generator</h3>
-				<p2>Used JavaScript to extract JSON data to generate a response from the 3rd Party Reddit API to display
-					jokes from the famous dad joke thread to allow the user to find agony with a click of a button. It
-					also allows the user to tweet about the website below each quote.</p2>
-			</div>
-		</a>
-
-		<a href="https://hasanatjahan.github.io/Weather-App/" target="_blank">
-			<div class="project">
-				<img src="Images/Weatherapp-img.PNG">
-				<h3>Online Weather Viewer</h3>
-				<p2>Used JavaScript that used JSON data from successful API responses to display the weather of the
-					user’s current location with a temperature toggle and weather icon</p2>
-			</div>
-		</a>
-
-		<a href="https://github.com/HasanatJahan/train-word2vec" target="_blank">
-			<div class="project">
-				<img src="Images/word2vec-img.png">
-				<h3>Word Similarity with Word2Vec</h3>
-				<p2>Used Python to train a Word2Vec Model to calculate similarity between words in vector space.</p2>
-			</div>
-		</a>
-
-		<a href="https://github.com/HasanatJahan/NLP-MLE-Language-Models" target="_blank">
-			<div class="project">
-				<img src="Images/languagemodeling-img.png">
-				<h3>Maximum Likelihood Estimate Language Modeling</h3>
-				<p2>Used Python to build and train generative Maximum Likelihood Models including unigram MLE model,
-					bigram MLE model and bigram MLE model with add-one smoothing. The models were evaluated through
-					perplexity calculations.</p2>
-			</div>
-		</a>
-
-		<a href="https://hasanatjahan.github.io/Portfolio/" target="_blank">
-			<div class="project">
-				<img src="Images/portfolio-img.png">
-				<h3>Portfolio</h3>
-				<p2>Personal portfolio page built from scratch using raw HTML and CSS.</p2>
-			</div>
-		</a>
-
-
-	</div>
-
-	<!--Machine Learning Section Here-->
-	<span id="ML-Progress"></span>
-	<div class="ml-section">
-		<h3>Machine Learning</h3>
-		<a href="https://www.kaggle.com/c/cuny-data-challenge-2019/overview" target="_blank">
-			<div class="ml-project" id="kaggle-section">
-				<!-- <img src="TicTacToe_img.png"> -->
-				<h2>CUNY Data Challenge</h2>
-				<h3>Kaggle Competition</h3>
-				<p2>For our first-ever machine learning project, we learned and instrumented data encoding techniques
-					using Pandas
-					Assimilated new models and implemented tuning in a short amount of time independently improving the
-					performance by 0.87% </p2>
-
-				<img src="Images/analytics-img.png" alt="A picture of a genric pie chart and a graph">
-			</div>
-		</a>
-
-		<a href="https://medium.com/@LostinJello/things-my-first-ever-kaggle-competition-has-taught-me-3d75a9863ec5"
-			target="_blank">
-			<div class="ml-project">
-				<h3>An article I wrote on my experience:</h3>
-				<img src="Images/Article_img.jpg" alt="a bunch of numbers on a screen">
-				<h2>Things My First Ever Machine Learning Competition Has Taught Me</h2>
-			</div>
-		</a>
-	</div>
-
-
-	<!--footer section-->
-	<footer class="footer">
-		<hr>
-		Thank you for visiting my site. Made completely from scratch.<br>
-		All rights reserved by Hasanat Jahan.
+	<footer id="contact" class="site-footer wrap">
+		<h2>Contact</h2>
+		<p>I'd love to hear from you. Reach out on
+			<a href="https://www.linkedin.com/in/hasanat-jahan-22a12b124/" target="_blank">LinkedIn</a> or
+			<a href="https://github.com/HasanatJahan" target="_blank">GitHub</a>, or email me at
+			<a href="mailto:jahanhasanat@gmail.com" id="email-link">jahanhasanat@gmail.com</a>
+			<button type="button" id="copy-email" aria-label="Copy email address to clipboard">copy</button>.</p>
 	</footer>
+
+	<script>
+		(function () {
+			var btn = document.getElementById('copy-email');
+			if (!btn) return;
+			var defaultLabel = btn.textContent;
+			btn.addEventListener('click', function () {
+				if (!navigator.clipboard) return;
+				navigator.clipboard.writeText('jahanhasanat@gmail.com').then(function () {
+					btn.textContent = 'copied';
+					setTimeout(function () { btn.textContent = defaultLabel; }, 1500);
+				});
+			});
+		})();
+	</script>
 
 </body>
 
