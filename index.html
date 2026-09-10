@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
 <html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<!-- Warm up the font origins before the stylesheet resolves; saves a round trip on first paint. -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
 	<title>Hasanat Jahan | Software Engineer, AI & Machine Learning</title>
 	<meta name="description"
-		content="Hasanat Jahan is a full-stack software engineer building automation and machine learning systems for real-world platforms. She currently works on healthcare claims infrastructure at Smarter Technologies, and previously built distributed database systems on AWS's Aurora team.">
+		content="Full-stack software engineer building automation and machine learning systems. Healthcare claims infrastructure at Smarter Technologies, previously AWS Aurora.">
 	<link rel="canonical" href="https://hasanatjahan.github.io/Portfolio/">
 	<!-- SVG first for modern browsers; PNG is the fallback for anything that skips it. -->
 	<link rel="icon" href="Images/favicon.svg" type="image/svg+xml">
 	<link rel="icon" href="Images/favicon.png" sizes="32x32" type="image/png">
 	<link rel="apple-touch-icon" href="Images/favicon.png">
 
-	<!-- Required for responsive web design -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<!-- Open Graph -->
-	<meta property="og:type" content="website">
+	<meta property="og:type" content="profile">
+	<meta property="og:locale" content="en_US">
 	<meta property="og:url" content="https://hasanatjahan.github.io/Portfolio/">
 	<meta property="og:site_name" content="Hasanat Jahan">
 	<meta property="og:title" content="Hasanat Jahan | Software Engineer, AI & Machine Learning">
@@ -28,6 +31,7 @@
 	<meta property="og:image" content="https://hasanatjahan.github.io/Portfolio/Images/hasanat-jahan-og-image.png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Hasanat Jahan, full-stack software engineer, with a self-portrait illustration">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -35,45 +39,62 @@
 	<meta name="twitter:description"
 		content="Full-stack software engineer building automation and machine learning systems, with experience on AWS's Aurora database team and healthcare claims infrastructure at Smarter Technologies.">
 	<meta name="twitter:image" content="https://hasanatjahan.github.io/Portfolio/Images/hasanat-jahan-og-image.png">
+	<meta name="twitter:image:alt" content="Hasanat Jahan, full-stack software engineer, with a self-portrait illustration">
 
-	<!-- Structured data -->
+	<!-- Structured data: a ProfilePage whose main entity is the Person. -->
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
-	  "@type": "Person",
-	  "name": "Hasanat Jahan",
-	  "url": "https://hasanatjahan.github.io/Portfolio/",
-	  "jobTitle": "Full-Stack Software Engineer",
-	  "worksFor": {
-	    "@type": "Organization",
-	    "name": "Smarter Technologies"
-	  },
-	  "alumniOf": {
-	    "@type": "CollegeOrUniversity",
-	    "name": "Queens College"
-	  },
-	  "sameAs": [
-	    "https://www.linkedin.com/in/hasanat-jahan-22a12b124/",
-	    "https://github.com/HasanatJahan"
-	  ],
-	  "knowsAbout": [
-	    "Software Engineering",
-	    "Machine Learning",
-	    "Automation",
-	    "Distributed Systems",
-	    "Amazon Web Services"
+	  "@graph": [
+	    {
+	      "@type": "ProfilePage",
+	      "@id": "https://hasanatjahan.github.io/Portfolio/#page",
+	      "url": "https://hasanatjahan.github.io/Portfolio/",
+	      "name": "Hasanat Jahan | Software Engineer, AI & Machine Learning",
+	      "inLanguage": "en-US",
+	      "mainEntity": {
+	        "@id": "https://hasanatjahan.github.io/Portfolio/#person"
+	      }
+	    },
+	    {
+	      "@type": "Person",
+	      "@id": "https://hasanatjahan.github.io/Portfolio/#person",
+	      "name": "Hasanat Jahan",
+	      "url": "https://hasanatjahan.github.io/Portfolio/",
+	      "jobTitle": "Full-Stack Software Engineer",
+	      "description": "Full-stack software engineer building automation and machine learning systems for real-world data platforms.",
+	      "email": "mailto:jahanhasanat@gmail.com",
+	      "image": "https://hasanatjahan.github.io/Portfolio/Images/hasanat-jahan-self-portrait-illustration.jpg",
+	      "worksFor": {
+	        "@type": "Organization",
+	        "name": "Smarter Technologies"
+	      },
+	      "alumniOf": {
+	        "@type": "CollegeOrUniversity",
+	        "name": "Queens College"
+	      },
+	      "sameAs": [
+	        "https://hasanatjahan.com",
+	        "https://www.linkedin.com/in/hasanat-jahan-22a12b124/",
+	        "https://github.com/HasanatJahan"
+	      ],
+	      "knowsAbout": [
+	        "Software Engineering",
+	        "Distributed Systems",
+	        "Machine Learning",
+	        "Automation",
+	        "Amazon Web Services",
+	        "Amazon Aurora",
+	        "PostgreSQL",
+	        "Python",
+	        "FastAPI",
+	        "Kubernetes",
+	        "Healthcare EDI",
+	        "X12"
+	      ]
+	    }
 	  ]
 	}
-	</script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147421897-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-147421897-1');
 	</script>
 
 </head>
@@ -105,18 +126,19 @@
 						Global Database team, where I designed distributed systems and monitoring for AWS's managed
 						database service.</p>
 					<p>Outside of engineering, I read, write, and occasionally
-						<a href="https://hasanatjahan.com" target="_blank">make art</a><span aria-hidden="true"> 🖼️</span>.</p>
+						<a href="https://hasanatjahan.com" target="_blank" rel="noopener">make art</a><span aria-hidden="true"> 🖼️</span>.</p>
 				</div>
 
 				<p class="social-links">
-					<a href="https://www.linkedin.com/in/hasanat-jahan-22a12b124/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/HasanatJahan" target="_blank">GitHub</a>
+					<a href="https://www.linkedin.com/in/hasanat-jahan-22a12b124/" target="_blank" rel="noopener">LinkedIn</a>
+					<a href="https://github.com/HasanatJahan" target="_blank" rel="noopener">GitHub</a>
 					<a href="mailto:jahanhasanat@gmail.com">jahanhasanat@gmail.com</a>
 					<button type="button" class="copy-email" aria-label="Copy email address to clipboard">copy</button>
 				</p>
 			</div>
 
 			<img class="header-portrait" src="Images/hasanat-jahan-self-portrait-illustration.jpg"
+				fetchpriority="high" decoding="async"
 				alt="Self-portrait illustration by Hasanat Jahan, a hand-drawn ink profile with a yellow outline"
 				width="820" height="1408">
 		</div>
@@ -215,7 +237,7 @@
 			<div class="project-list">
 
 				<!-- Art Portfolio -->
-				<a class="project-card" href="https://hasanatjahan.com" target="_blank">
+				<a class="project-card" href="https://hasanatjahan.com" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-art-portfolio-site.jpg"
 						alt="Homepage of hasanatjahan.com showing a grid of paintings and sketchbook spreads with their titles and materials"
 						loading="lazy" width="1200" height="780">
@@ -228,7 +250,7 @@
 						them.</p>
 				</a>
 
-				<a class="project-card" href="https://github.com/HasanatJahan/Movie-Review-Classification-Naive-Bayes" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/Movie-Review-Classification-Naive-Bayes" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-sentiment-classification-icon.png"
 						alt="Happy and sad face icons illustrating sentiment analysis" loading="lazy" width="335"
 						height="154">
@@ -237,7 +259,7 @@
 						movie review sentiment, reaching 89.712% accuracy with optimizations.</p>
 				</a>
 
-				<a class="project-card" href="https://github.com/HasanatJahan/train-word2vec" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/train-word2vec" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-word2vec-similarity-output.png"
 						alt="Output listing word similarity scores from a Word2Vec model, such as 'dirty' and 'clean' at 0.38"
 						loading="lazy" width="480" height="324">
@@ -246,7 +268,7 @@
 						between words in vector space.</p>
 				</a>
 
-				<a class="project-card" href="https://github.com/HasanatJahan/NLP-MLE-Language-Models" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/NLP-MLE-Language-Models" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-mle-language-modeling-diagram.png"
 						alt="Diagram illustrating a maximum likelihood estimate language model predicting the next word in a sentence"
 						loading="lazy" width="795" height="281">
@@ -258,7 +280,7 @@
 
 				<a class="project-card"
 					href="https://htmlpreview.github.io/?https://github.com/msr-ds3/predicting-the-present-2020-group-2/blob/master/Testing_Models/testing_auto_predictions.nb.html"
-					target="_blank">
+					target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-google-trends-research-chart.png"
 						alt="Scatter plot comparing actual and predicted values from research extending 'Predicting the Present with Google Trends'"
 						loading="lazy" width="1032" height="648">
@@ -269,7 +291,7 @@
 				</a>
 
 				<!-- Automated Documentation Generator -->
-				<a class="project-card" href="https://github.com/HasanatJahan/codebase-doc-generator" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/codebase-doc-generator" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-documentation-generator-readme.png"
 						alt="README screenshot of the Documentation Generator tool describing its features and installation steps"
 						loading="lazy" width="800" height="679">
@@ -279,7 +301,7 @@
 				</a>
 
 				<!-- Unbeatable TicTacToe -->
-				<a class="project-card" href="https://github.com/HasanatJahan/Unbeatable_TicTacToe" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/Unbeatable_TicTacToe" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-tictactoe-minimax-cli.png"
 						alt="Terminal output of a command-line Tic-Tac-Toe game showing the game board and a move prompt"
 						loading="lazy" width="810" height="312">
@@ -289,7 +311,7 @@
 				</a>
 
 				<!-- Simple React App -->
-				<a class="project-card" href="https://github.com/HasanatJahan/React-Writer-Blog/tree/main" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/React-Writer-Blog/tree/main" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-react-blog-app.png"
 						alt="Screenshot of The Dojo Blog, a React blog app listing several blog posts" loading="lazy"
 						width="1178" height="801">
@@ -299,7 +321,7 @@
 				</a>
 
 				<!-- Simple CRUD App -->
-				<a class="project-card" href="https://github.com/HasanatJahan/simple-crud-app-backend" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/simple-crud-app-backend" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-mern-stack-crud-api.png"
 						alt="MERN stack logo graphic representing MongoDB, Express, React, and Node.js" loading="lazy"
 						width="1920" height="1080">
@@ -308,7 +330,7 @@
 						Express, and MongoDB. Supports basic CRUD operations and JSON data exchange.</p>
 				</a>
 
-				<a class="project-card" href="https://hasanatjahan.github.io/Wikipedia_Searcher/" target="_blank">
+				<a class="project-card" href="https://hasanatjahan.github.io/Wikipedia_Searcher/" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-wikipedia-searcher-app.png"
 						alt="Screenshot of the WikiDiver app with a duck illustration, search box, and a list of Wikipedia article results"
 						loading="lazy" width="937" height="859">
@@ -318,7 +340,7 @@
 					<p class="project-note">Quack the duck for an interesting surprise.</p>
 				</a>
 
-				<a class="project-card" href="https://hasanatjahan.github.io/Weather-App/" target="_blank">
+				<a class="project-card" href="https://hasanatjahan.github.io/Weather-App/" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-weather-app.png"
 						alt="Weather app screenshot showing a rain icon, 16°C temperature, and Queens County, US location"
 						loading="lazy" width="1374" height="877">
@@ -327,7 +349,7 @@
 						JSON API response, with a temperature toggle and weather icon.</p>
 				</a>
 
-				<a class="project-card" href="https://github.com/HasanatJahan/CS355_Final_Project" target="_blank">
+				<a class="project-card" href="https://github.com/HasanatJahan/CS355_Final_Project" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-imgur-shibe-poster.png"
 						alt="Shiba Inu dog photo above a button to post the image to Imgur" loading="lazy"
 						width="966" height="886">
