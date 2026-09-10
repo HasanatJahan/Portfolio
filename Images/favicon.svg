@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- Opaque ground on purpose: Google Search's dark theme paints favicons on a
-       dark surface, where a transparent-backed black disc disappears. Colours are
-       the site's own background and primary text tokens. This file is the single
-       source for every raster; regenerate them with tools/build-favicons.py. -->
-  <rect width="32" height="32" fill="#FAF8F3"/>
-  <circle cx="16" cy="16" r="13" fill="#1E1C19"/>
+  <!-- Transparent ground by choice. On a dark surface (Google Search's dark theme,
+       a dark browser tab strip) a near-black disc on transparency reads faintly or
+       not at all; that is accepted here in exchange for the mark sitting directly
+       on whatever surface hosts it. This file is the single source for every
+       raster; regenerate them with tools/build-favicons.py. -->
+  <circle cx="16" cy="16" r="14" fill="#1E1C19"/>
 </svg>
