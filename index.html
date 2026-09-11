@@ -260,16 +260,9 @@
 						alt="Unbeatable Tic-Tac-Toe web app on a dark background, with a scoreboard counting human wins, robot wins and draws above an empty board"
 						loading="lazy" width="1576" height="1448">
 					<h3>Unbeatable Tic-Tac-Toe</h3>
-					<p class="project-description">A tic-tac-toe opponent you cannot beat, playable in the browser.
-						The &ldquo;mechanical AI&rdquo; isn't learning anything: it runs minimax with alpha-beta
-						pruning over the whole game tree, scoring faster wins higher so it closes games out instead
-						of toying with you. A draw is the best result available.</p>
-					<p class="project-description">The scoreboard above the board is global. Every finished game
-						reports its result to a small API, and the totals are incremented inside Redis with HINCRBY
-						rather than read-modify-write, so games ending at the same moment cannot overwrite each
-						other. Storage sits behind a two-method interface, so the same logic runs on a JSON file
-						locally and a serverless function in production. Lose the API and the game still plays,
-						counting your session alone.</p>
+					<p class="project-description">A tic-tac-toe opponent you cannot beat. The &ldquo;mechanical
+						AI&rdquo; is nothing clever: just minimax with alpha-beta pruning, so a draw is the best
+						you can get. A shared scoreboard counts everyone's attempts.</p>
 					<p class="project-note">Despair not. The robots have not won, math did. It grew out of
 						Unbeatable_TicTacToe, the Python command-line original.</p>
 				</a>
