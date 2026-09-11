@@ -253,6 +253,27 @@
 						them.</p>
 				</a>
 
+				<!-- Unbeatable Tic-Tac-Toe, web version -->
+				<a class="project-card" href="https://unbeatable-tic-tac-toe-webapp.vercel.app" target="_blank"
+					rel="noopener">
+					<img src="Images/hasanat-jahan-unbeatable-tictactoe-webapp.png"
+						alt="Unbeatable Tic-Tac-Toe web app on a dark background, with a scoreboard counting human wins, robot wins and draws above an empty board"
+						loading="lazy" width="1576" height="1448">
+					<h3>Unbeatable Tic-Tac-Toe</h3>
+					<p class="project-description">A tic-tac-toe opponent you cannot beat, playable in the browser.
+						The &ldquo;mechanical AI&rdquo; isn't learning anything: it runs minimax with alpha-beta
+						pruning over the whole game tree, scoring faster wins higher so it closes games out instead
+						of toying with you. A draw is the best result available.</p>
+					<p class="project-description">The scoreboard above the board is global. Every finished game
+						reports its result to a small API, and the totals are incremented inside Redis with HINCRBY
+						rather than read-modify-write, so games ending at the same moment cannot overwrite each
+						other. Storage sits behind a two-method interface, so the same logic runs on a JSON file
+						locally and a serverless function in production. Lose the API and the game still plays,
+						counting your session alone.</p>
+					<p class="project-note">Despair not. The robots have not won, math did. It grew out of
+						Unbeatable_TicTacToe, the Python command-line original.</p>
+				</a>
+
 				<a class="project-card" href="https://github.com/HasanatJahan/Movie-Review-Classification-Naive-Bayes" target="_blank" rel="noopener">
 					<img src="Images/hasanat-jahan-sentiment-classification-icon.png"
 						alt="Happy and sad face icons illustrating sentiment analysis" loading="lazy" width="335"
@@ -301,16 +322,6 @@
 					<h3>Documentation Generator</h3>
 					<p class="project-description">An automated tool that leverages the GitHub and Greptile APIs to
 						index repositories, generate README files, and streamline the documentation workflow.</p>
-				</a>
-
-				<!-- Unbeatable TicTacToe -->
-				<a class="project-card" href="https://github.com/HasanatJahan/Unbeatable_TicTacToe" target="_blank" rel="noopener">
-					<img src="Images/hasanat-jahan-tictactoe-minimax-cli.png"
-						alt="Terminal output of a command-line Tic-Tac-Toe game showing the game board and a move prompt"
-						loading="lazy" width="810" height="312">
-					<h3>Unbeatable TicTacToe Using Minimax</h3>
-					<p class="project-description">Command-Line-Interface TicTacToe game played against a bot. The
-						Minimax algorithm, implemented in Python, ensures the human opponent never wins.</p>
 				</a>
 
 				<!-- Simple React App -->
